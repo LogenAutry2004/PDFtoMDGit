@@ -60,9 +60,9 @@ for root, _, files in os.walk(markdown_dir):
                 # Convert HTML to PDF with CSS styling
                 HTML(string=f"{custom_css}{html_content}").write_pdf(pdf_path)
 
-                print(f"✅ Converted {md_path} -> {pdf_path}")
+                print(f"Converted {md_path} -> {pdf_path}")
 
             except Exception as e:
                 print(f"❌ Error converting {md_path}: {e}")
 
-print("🎉 All Markdown files have been converted to PDFs.")
+print("All Markdown files have been converted to PDFs.")
